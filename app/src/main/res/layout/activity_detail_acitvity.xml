@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailAcitvity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+            <ImageView
+                android:scaleType="centerCrop"
+                android:layout_marginTop="25dp"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/kontak"
+                android:id="@+id/kotnak"
+                >
+
+            </ImageView>
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:id="@+id/bahasa1"
+                android:layout_marginTop="45dp"
+                android:layout_toRightOf="@+id/kotnak"
+                android:text="Nama Bahasa"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:maxLines="2"
+                android:id="@+id/program1"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/bahasa1"
+                android:layout_toRightOf="@id/kotnak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bahasa Java">
+
+            </TextView>
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="2dp"
+                android:layout_below="@id/program1"
+                android:layout_toRightOf="@id/kotnak"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Penemu"
+                android:id="@+id/penemu">
+
+            </TextView>
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:maxLines="2"
+                android:id="@+id/nama2"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/penemu"
+                android:layout_toRightOf="@id/kotnak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="James Gosling">
+
+            </TextView>
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tanggal"
+                android:text="Tahun"
+                android:layout_toRightOf="@id/kotnak"
+                android:textStyle="bold"
+                android:layout_below="@id/nama2"
+                android:layout_marginTop="5dp">
+
+            </TextView>
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:id="@+id/tahun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="3"
+                android:text="22 bulan 7 2019"
+                android:layout_toRightOf="@id/kotnak"
+                android:layout_below="@id/tanggal"
+                android:layout_marginTop="2dp">
+
+            </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="260dp"
+                android:orientation="vertical">
+                <TextView
+                    android:padding="5dp"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Penemu"
+                    android:textStyle="bold"
+                    android:layout_gravity="center">
+
+                </TextView>
+
+                <ImageView
+                    android:id="@+id/mantap"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/julius"
+                    android:layout_marginTop="5dp">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/tokoh1"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tokoh Penemu"
+                    android:layout_gravity="center"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/cardview_light_background"
+                android:layout_width="match_parent"
+                android:layout_height="680dp"
+                android:layout_marginTop="400dp"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:padding="5dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Detail">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/muda"
+                    android:maxLines="10"
+                    android:padding="5dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Saya anak siapa dan anak o"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+                <TextView
+                    android:padding="5dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="Sejarah"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <TextView
+                    android:maxLines="20"
+                    android:id="@+id/tua"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="aku sayang kamu selamanya"
+                    android:fontFamily="sans-serif"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp">
+                </TextView>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</ScrollView>
